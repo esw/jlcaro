@@ -11,25 +11,22 @@
 {% endblock %}
 {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
 </head>
-{% load i18n %}
 
-<body class="{% if is_popup %} popup {% endif %}{% block bodyclass %}{% endblock %}">
+<body>
 
 <!-- Container -->
-<div id="container">
+<div class="container">
 	{% block header %}
-		{% if not is_popup %}
-			<!-- Header -->
-			{% include 'header.html' %}
-			<!-- END Header -->
-		{% endif %}
+	    <!-- Header -->
+		<div class="header">
+		    jlcaro.com
+		</div>
+		<div class="menu">
+		    <a href="/" title="Home">Home</a>
+		    <a href="/contact/" title="Contact">Contact</a>
+		</div>
+		<!-- END Header -->
 	{% endblock %}
-	
-    {% if messages %}
-        <div class="mensajes">
-            <ul class="messagelist">{% for message in messages %}<li>{{ message|escape }}</li>{% endfor %}</ul>
-        </div>
-    {% endif %}
     
     <!-- Content -->
     <div id="content" class="{% block coltype %}colM{% endblock %}">

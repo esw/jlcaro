@@ -104,6 +104,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'base',
 )
 
 #NOTIFICATION_BUILTIN_NOTICE_VIEWS = False
