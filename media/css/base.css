@@ -1,21 +1,63 @@
+html {
+    background: #888;
+}
+
 body {
-    background: #DDDDDD;
-    margin:0px;
-    padding: 10px;
+    background: #888;
+    margin:10px 0px;
+    padding: 0px;
     text-align: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #444;
+    letter-spacing: -1px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4{
+    font-weight:bold;
+}
+
+h1 {
+    font-size:180%;
+}
+
+h2 {
+    font-size:160%;
 }
 
 .container {
-    background: #FFFFFF none repeat scroll 0% 0%;
+    background: #FFF none repeat scroll 0 0;
     margin: 0pt auto;
     text-align: left;
-    width: 500px;
+    width: 520px;
 }
 
 .header {
-    padding: 5px;
+    background: #DDD none repeat scroll 0 0;
+    padding: 10px;
     margin: 0px;
     text-align: center;
+    color: #555;
+}
+
+.menu {
+    background: #AAA none repeat scroll 0 0;
+    padding: 10px;
+    margin: 0px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+
+ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+}
+
+li {
+    display: inline;
+    margin: 0px 5px;
+}
+
+#content {
+    padding: 10px;
 }

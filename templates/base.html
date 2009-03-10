@@ -3,9 +3,9 @@
 <head>
 <title>{% block title %}jlcaro.com{% endblock %}</title>
 {{ admin.media }}
+<link rel="stylesheet" type="text/css" href="{% load media %}{% media_prefix %}css/reset.css" />
 <link rel="stylesheet" type="text/css" href="{% block stylesheet %}{% load media %}{% media_prefix %}css/base.css{% endblock %}" />
-
-{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% media_prefix %}css/rtl.css{% endblock %}" />{% endif %}
+<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% media_prefix %}css/rtl.css{% endblock %}" />
 {% block extrastyle %}{% endblock %}
 {% block extrahead %}
 {% endblock %}
@@ -19,24 +19,26 @@
 	{% block header %}
 	    <!-- Header -->
 		<div class="header">
-		    jlcaro.com
+		    <h1>Jose Luis Caro</h1>
 		</div>
 		<div class="menu">
-		    <a href="/" title="Home">Home</a>
-		    <a href="/contact/" title="Contact">Contact</a>
+		    <ul>
+		        <li><a href="/" title="Home">Home</a></li>
+		        <li><a href="/contact/" title="Contact">Contact</a></li>
+		    </ul>
 		</div>
 		<!-- END Header -->
 	{% endblock %}
     
     <!-- Content -->
-    <div id="content" class="{% block coltype %}colM{% endblock %}">
-        {% block pretitle %}{% endblock %}
-        {% block content_title %}{% if title %}<h1>{{ title|escape }}</h1>{% endif %}{% endblock %}
-        {% block content %}
-        {% block object-tools %}{% endblock %}
-        {{ content }}
-        {% endblock %}
-        {% block sidebar %}{% endblock %}
+    <div id="content">
+        
+        <p><img alt="Me" src="/media/img/me.jpg" width="50%"/>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium lectus non augue. Suspendisse vel purus. Sed odio arcu, mollis sit amet, gravida eu, adipiscing non, ante. Donec consequat diam in dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras quis nunc sed dolor fermentum scelerisque. Cras pellentesque massa id quam. Phasellus id mi. Morbi vitae nulla. Nullam consequat ornare augue.
+</p>
+<p>
+Aenean sit amet diam. Nulla sit amet leo eu sapien tempor adipiscing. Praesent velit nisl, blandit et, auctor ac, sollicitudin ac, purus. Vestibulum ullamcorper feugiat est. Suspendisse sollicitudin magna eget metus. Aenean facilisis sapien non lectus. Sed eget ipsum vitae leo tempus iaculis. Sed bibendum justo adipiscing risus. Aenean vestibulum augue eget sem mattis auctor. Curabitur eu erat in dui euismod pulvinar. Vestibulum pellentesque elit in sapien. In elit tellus, iaculis consectetur, aliquam in, ornare eu, sem. Sed euismod, eros sed eleifend eleifend, tortor nibh consequat nisl, et scelerisque turpis lacus non neque.
+</p>
         <br class="clear" />
     </div>
     <!-- END Content -->

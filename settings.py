@@ -50,12 +50,12 @@ ADMIN_MEDIA_ROOT = os.path.join(MEDIA_ROOT,'admin')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = 'http://localhost:8000/site_media/'
+MEDIA_URL = 'http://localhost:8000/media/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-MEDIA_PREFIX = '/site_media/'
+MEDIA_PREFIX = '/media/'
 ADMIN_MEDIA_PREFIX = '/admin_media/'
 
 # Make this unique, and don't share it with anybody.
