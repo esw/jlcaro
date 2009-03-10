@@ -1,0 +1,3 @@
+*.pyc # Excluir los archivos compilados de python
+*.sqlite # Excluir los archivos de base de datos SQLITE
+*.*~ # Excluir archivos temporales de Unix

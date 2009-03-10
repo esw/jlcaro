@@ -1,0 +1,10 @@
+{% extends "base_site.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'ES site admin' %}{% endblock %}
+
+{% block branding %}
+{% trans 'Panel Principal' %}
+{% endblock %}
+
+{% block nav-global %}{{ block.super }}{% endblock %}

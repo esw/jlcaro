@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Page Not Found - "%}{{ block.super }}{% endblock %}
+{% block module-name %}{% trans "Page Not Found"%}{% endblock %}
+{% block content-title %}{% trans "Pagina no encontrada" %}{% endblock %}
+{% block content %}
+<p class="failure">{% trans "Lo sentimos, la pagina que solicito no se encontro." %}</p>
+{% endblock %}
