@@ -32,10 +32,8 @@
     
     <!-- Content -->
     <div class="content">
-        <h2>
         {% block content_title %}
         {% endblock %}
-        </h2>
         {% block content %}
         {% endblock %}
     </div>
