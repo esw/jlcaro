@@ -14,12 +14,12 @@
 
 <body>
 
-<!-- Container -->
-<div class="container">
-	{% block header %}
-	    <!-- Header -->
+{% block header %}
+	<!-- Header -->
 		<div class="header">
-		    <h1>Jose Luis Caro</h1>
+		    <div class="header_title">
+		        <h1>Jose Luis Caro</h1>
+		    </div>
 		</div>
 		<div class="menu">
 		    <ul>
@@ -27,31 +27,47 @@
 		        <li><a href="/contact/" title="Contact">Contact</a></li>
 		    </ul>
 		</div>
-		<!-- END Header -->
-	{% endblock %}
-    
+    <!-- END Header -->
+{% endblock %}
+
+{% block container %}
+<!-- Container -->
+<div class="container">
     <!-- Content -->
     <div class="content">
+        <div class="content_title">
         <h2>
         {% block content_title %}
         {% endblock %}
         </h2>
+        </div>
         {% block content %}
         {% endblock %}
     </div>
     <!-- END Content -->
-
-    {% block footer %}
-        <div class="footer">
-            <p>
-            Copyright Jose Luis Caro.
-            <br/>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/co/">Some rights reserved.</a>
-            </p>
-        </div>
-    {% endblock %}
 </div>
 <!-- END Container -->
+{% endblock %}
 
+    {% block footer %}
+    <div class="footer">
+        <div>
+            <p> Copyright Jose Luis Caro - 
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/co/">Some rights reserved.</a>
+            </p><p>
+            <a href="http://www.djangoproject.com/"><img src="http://media.djangoproject.com/img/badges/djangosite100x25.gif" border="0" alt="A Django site." title="A Django site." /></a>
+            </p>
+        </div>
+    </div>
+    {% endblock %}
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5593859-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>

@@ -2,17 +2,24 @@
 {% block title %}
 {{ block.super }}
 {% endblock %}
+{% block content_title %}
+Hello!
+{% endblock %}
 {% block content %}
-        <p>
-        <img alt="Me" src="/media/img/me.jpg" width="90" align="left"/><b>
-        Hello!!</b><br>
-        My name is Jose Luis Caro and I am from Barranquilla, Colombia.
+    <p>
+        <img alt="Me" src="/media/img/me.jpg" width="90" align="left"/>
+        My name is Jose Luis Caro and I am from <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=barranquilla&sll=37.0625,-95.677068&sspn=84.046167,158.203125&ie=UTF8&ll=10.97473,-74.793892&spn=0.106506,0.154495&t=h&z=13&iwloc=addr">Barranquilla</a>, Colombia.
         <br>
         I am an engineer currently employed as the CTO of 
-        <a href='http://www.energiasolarsa.com'>Energia Solar</a>.<br>
-        I love all things open source, and enjoy 
-        <br>
-        Currently
-        </p>
-        <br class="clear" />
+        <a href='http://www.energiasolarsa.com'>Energia Solar</a>.
+    </p><p>
+        I love open source software, I use Linux at work and at home, and develop software using also open source languages and frameworks.
+        Currently I am a <a href="www.python.org">Python</a> and <a href="www.djangoproject.com">Django</a> enthusiast!
+    </p><p>
+        I love all things tech-related and I like to keep updated using my favorite RSS Reader (Google Reader).
+    </p><p>
+        I consider myself an early adopter, so I try to test and subscribe to any new service that emerges online, so you will probably find me in many services! (Some are listed in my <a href="/contact">Contact</a> seccion)
+    </p>
+    <br class="clear" />
+    
 {% endblock %}
