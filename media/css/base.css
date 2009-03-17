@@ -1,12 +1,12 @@
 html {
-    background: #666 none repeat scroll 0 0;
+    background: #DDD none repeat scroll 0 0;
     color: #333;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 body {
-    text-align: center;
+    text-align: left;
 }
 
 h1, h2, h3, h4{
@@ -22,55 +22,85 @@ h2 {
 }
 
 h3 {
-    font-size:120;
+    font-size:120%;
+}
+
+p {
+    margin: 6pt;
 }
 
 .container {
     background: #FFF none repeat scroll 0 0;
     text-align: left;
-    width: 530px;
-    border: 1px solid #777;
-    margin: 10pt auto;
+    /*border: 1px solid #555;*/
+    margin: 0pt auto;
+}
+
+.content {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.content_title {
+    text-align: center;
 }
 
 .header {
-    background: #EEE none repeat scroll 0 0;
-    padding: 10px;
+    background: #EEE url(/media/img/brushed_metal_gray.png) repeat scroll 0 0;
     margin: 0px;
     letter-spacing: -1px;
-    text-align: center;
-    color: #555;
+    text-align: left;
+    color: #DDD;
+}
+
+.header div {
+    padding: 10px;
+    margin: auto;
+    width: 550px;
 }
 
 .menu {
-    background: #BBB none repeat scroll 0 0;
-    padding: 5px;
-    margin: 0px;
+    background: #DDD none repeat scroll 0 0;
     letter-spacing: -1px;
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #777;
+    border-top: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
 }
 
 .menu ul {
+    margin: auto;
+    width: 550px;
+    padding: 10px;
     list-style-image:none;
     list-style-position:outside;
     list-style-type:none;
-    text-align: center;
+    text-align: left;
 }
 
 .menu li {
     display: inline;
     margin: 0px 5px;
+    font-size: 110%;
 }
 
 .footer {
     background: #DDD none repeat scroll 0 0;
-    border-top: 1px solid #BBB;
-    padding: 5px;
-    margin: 0px;
-    text-align: center;
-    font-size: 12px; 
+    border-top: 1px solid #CCC;
+    font-size: 12px;
     color: #555;
+}
+
+.footer div {
+    margin: auto;
+    width: 550px;
+    text-align: center;
+}
+
+.footer a img {
+    opacity: 0.5;
+}
+
+.footer a:hover img{
+    opacity: 1.0;
 }
 
 .content {
@@ -86,12 +116,24 @@ h3 {
     border: 1px solid #BBB;
     padding: 10px;
     margin: 10px;
-    letter-spacing: 0px;
 }
 
 .contact-box a {
     color:#333;
 }
 
+.box {
+    margin: 5px;
+}
 
+.box ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+}
+
+.box ul li {
+    display: inline;
+    margin: 5pt;
+}
 
