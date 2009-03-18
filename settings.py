@@ -104,6 +104,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'chronograph',
+    'mailer',
     'base',
 )
 

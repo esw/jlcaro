@@ -1,0 +1,31 @@
+8
+
+dir
+11
+http://django-chronograph.googlecode.com/svn/trunk/chronograph/templates/admin
+http://django-chronograph.googlecode.com/svn
+
+
+
+2009-03-03T01:22:06.473887Z
+9
+wnielson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3eb1f754-06c4-11de-bbfd-a7c1bc4c261e
+
+chronograph
+dir
+

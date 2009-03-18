@@ -1,0 +1,94 @@
+8
+
+dir
+11
+http://django-chronograph.googlecode.com/svn/trunk/chronograph
+http://django-chronograph.googlecode.com/svn
+
+
+
+2009-03-03T01:55:11.787687Z
+11
+wnielson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3eb1f754-06c4-11de-bbfd-a7c1bc4c261e
+
+admin.py
+file
+
+
+
+
+2009-03-10T21:52:49.000000Z
+9a4b220484efa1e032bfd561c33d79a8
+2009-03-03T01:55:11.787687Z
+11
+wnielson
+
+views.py
+file
+
+
+
+
+2009-03-10T21:52:49.000000Z
+ad656aaabae09dc285884ad38d889ef9
+2009-03-02T00:53:47.761715Z
+2
+wnielson
+
+__init__.py
+file
+
+
+
+
+2009-03-10T21:52:49.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-03-02T00:53:47.761715Z
+2
+wnielson
+
+tests.py
+file
+
+
+
+
+2009-03-10T21:52:49.000000Z
+1fde9e174e80f7680d95dc905a3533a3
+2009-03-02T00:53:47.761715Z
+2
+wnielson
+
+models.py
+file
+
+
+
+
+2009-03-10T21:52:49.000000Z
+b1d727bf35d8753d2b4e498f71dc0412
+2009-03-03T01:35:50.348613Z
+10
+wnielson
+
+management
+dir
+
+templates
+dir
+
