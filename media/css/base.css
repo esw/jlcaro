@@ -114,12 +114,53 @@ p {
 .contact-box {
     background: #FFF;
     border: 1px solid #BBB;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: auto;
+}
+
+.contact-box li {
+    margin: 5px 0px;
 }
 
 .contact-box a {
     color:#333;
+}
+
+#contact_form {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background: #EEE;
+    border: 1px solid #CCC;
+}
+
+#contact_form label {
+    display: block;
+    float: left;
+    width: 100px;
+}
+
+#contact_form input[type="text"] {
+    width: 390px;
+}
+
+#contact_form h3 {
+    margin-bottom: 5px;
+}
+
+#contact_form textarea {
+    width: 390px;
+    height: 80px;
+}
+
+.field_wrapper {
+    padding: 5px 5px;
+}
+
+.submit_row {
+    /*margin-left: 450px;*/
+    float: right;
+    margin: 5px auto 30px;
 }
 
 .box {
