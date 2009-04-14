@@ -19,7 +19,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'es.sqlite'             # Or path to database file if using sqlite3.
+DATABASE_NAME = 'jlcaro-debug.sqlite'             # Or path to database file if using sqlite3.
 DATABASE_USER = ''             # Not used with sqlite3.
 DATABASE_PASSWORD = ''         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
@@ -115,7 +115,7 @@ INSTALLED_APPS = (
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 
-L_SETTINGS_DIR = os.path.abspath(PROJECT_DIR + os.sep + '..' + os.sep + 'es_settings')
+L_SETTINGS_DIR = os.path.abspath(PROJECT_DIR + os.sep + '..' + os.sep + 'jlcaro_settings')
 
 if os.path.exists(L_SETTINGS_DIR):
     sys.path.append(L_SETTINGS_DIR)
