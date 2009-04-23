@@ -1,7 +1,7 @@
 html {
     background: #DDD none repeat scroll 0 0;
     color: #333;
-    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -151,6 +151,10 @@ p {
 #contact_form textarea {
     width: 390px;
     height: 80px;
+}
+
+#contact_form .error {
+    float: right;
 }
 
 .field_wrapper {

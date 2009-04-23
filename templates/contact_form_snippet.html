@@ -1,15 +1,17 @@
 {% if contact_form %}
     <form action="" method="post">
-    <h3>Send me an EMail</h3>
+    <h3>Send me an EMail:</h3>
     {% for field in contact_form %}
         <div class="field_wrapper">
-            {% if field.errors %}
-                <div class="error">{{ field.errors }}</div>
-            {% endif %}
+            <p>
                 <b>{{ field.label_tag }}</b> {{ field }}
             {% if field.help_text %}
                 <div class="field_help">{{ field.help_text }}</div>
             {% endif %}
+            {% if field.errors %}
+                <div class="error">{{ field.errors }}</div>
+            {% endif %}
+            </p>
         </div>
     {% endfor %}
     <div class="submit_row">
