@@ -141,7 +141,7 @@ p {
 }
 
 #contact_form input[type="text"] {
-    width: 390px;
+    width: 400px;
 }
 
 #contact_form h3 {
@@ -149,7 +149,7 @@ p {
 }
 
 #contact_form textarea {
-    width: 390px;
+    width: 400px;
     height: 80px;
 }
 
@@ -158,13 +158,12 @@ p {
 }
 
 .field_wrapper {
-    padding: 5px 5px;
+    padding: 5px;
 }
 
 .submit_row {
-    /*margin-left: 450px;*/
-    float: right;
-    margin: 5px auto 30px;
+    padding: 5px;
+    position: relative;
 }
 
 .box {
