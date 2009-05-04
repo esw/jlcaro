@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 from django.core.urlresolvers import reverse
@@ -21,9 +21,12 @@ def contact_view(request):
             email = contact_form.cleaned_data['email']
             message = contact_form.cleaned_data['message']
             send_mail('Contact Email from jlcaro.com',message,email,['me@jlcaro.com'],fail_silently=True)
-            return HttpResponseRedirect(reverse('email_success'))
+            return HttpResponse('success')
     else:
         contact_form = ContactForm()
     return render_to_response('contact.html',{'contact_form':contact_form},context_instance=RequestContext(request))
 
+def process_contact_view(request):
+    if request.method == 'POST':
+        contact_form = ContactForm
 
