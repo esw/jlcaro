@@ -1,6 +1,7 @@
 
 REPOS = (('jlcaro','origin','master'),)
 PROJECT = 'jlcaro'
+PROJECT_DIR_BASE = '/var/django'
 
 def production():
     "Configures Fabric to access Production Server"
@@ -23,21 +24,21 @@ def syncdb():
     "Runs SyncDB for the django project"
     require('fab_hosts',provided_by=[staging, production])
     require('project',provided_by=[staging, production])
-    run("cd ~/$(project)/; python manage.py syncdb")
+    run("cd "+PROJECT_DIR_BASE+"/; python manage.py syncdb")
 
 def migrate():
     "Runs Migrate for the django project"
     require('fab_hosts',provided_by=[staging,production])
     require('project',provided_by=[staging, production])
-    run("cd ~/$(project)/; python manage.py migrate")
+    run("cd "+PROJECT_DIR_BASE+"/; python manage.py migrate")
 
 def git_pull():
     "Updates the repository"
-    run('cd ~/$(repo)/; git pull $(parent) $(branch)')
+    run('cd '+PROJECT_DIR_BASE+'/$(repo)/; git pull $(parent) $(branch)')
 
 def git_reset():
     "Resets the repository to specified version."
-    run("cd ~/$(repo)/; git reset --hard $(hash)")
+    run("cd "+PROJECT_DIR_BASE+"/$(repo)/; git reset --hard $(hash)")
 
 def pull():
     "Pulls from the remote GitRepo"
